@@ -46,7 +46,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="relative aspect-[351/621] text-center -translate-y-[10%] z-50">
+      <div className="relative aspect-[351/621] text-center -translate-y-[10%] z-40">
         <Table />
       </div>
     </div>
