@@ -39,14 +39,14 @@ function Table() {
               />
             </div>
           </div>
-          <table className="table-fixed border-collapse w-[95%] mx-auto border-b border-r border-black text-center shadow-xl">
+          <table className="table-fixed w-[95%] mx-auto border-b border-r border-black text-center shadow-xl">
             <thead>
               <tr className="border-b border-black text-[5vw] font-GH-Bold">
-                <th className="w-[16%] py-2 border-r border-black"></th>
+                <th className="py-2 border-r border-black"></th>
                 {TABLE_COLUMN.map((items) => (
                   <th
                     key={items.id}
-                    className={`w-[21%] py-2 ${
+                    className={`py-2 ${
                       items.id === TABLE_COLUMN.length
                         ? ""
                         : "border-r border-gray-border"
