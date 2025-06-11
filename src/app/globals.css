@@ -9,6 +9,7 @@ body,
 body {
   margin: 0;
   padding: 0;
+  padding-top: env(safe-area-inset-top);
 }
 
 @keyframes fadeIn {
