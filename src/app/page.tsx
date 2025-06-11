@@ -5,7 +5,7 @@ import Table from "./_component/Table";
 export default function Page() {
   return (
     <div className="w-full min-h-screen flex flex-col bg-background">
-      <div className="relative w-full aspect-[375/752] max-w-md">
+      <div className="relative w-full h-full aspect-[375/752] max-w-md">
         <Image
           src="/assets/firstImage.svg"
           alt="위를 쳐다보는 이미지"
@@ -14,7 +14,7 @@ export default function Page() {
           priority
         />
 
-        <div className="w-full relative font-GH-Regular text-[4vw] min-[448px]:text-lg top-[86%] right-[15%] flex flex-col text-center z-10">
+        <div className="w-full absolute font-GH-Regular text-[4vw] min-[448px]:text-lg top-[86%] right-[15%] flex flex-col text-center z-10">
           {START_TEXT.map((text) => (
             <span key={text.id} className="fade-in">
               {text.text}
@@ -30,7 +30,7 @@ export default function Page() {
           className="object-cover"
         />
       </div>
-      <div className="relative aspect-[375/410] z-20 -translate-y-[15%]">
+      <div className="w-full h-full relative aspect-[375/410] z-20 -translate-y-[15%]">
         <Image
           src="/assets/thirdImage.svg"
           alt="팔꿈치 괴는 이미지"
